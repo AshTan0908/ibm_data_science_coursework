@@ -1,0 +1,1 @@
+Data Science is the study of data. It involves various process such as data mining, preprocessing, visualisation, as well as "storytelling" and, occasionally, machine learning model development and testing.
