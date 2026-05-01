@@ -212,8 +212,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "25af43631816cfe2",
+  "active": "9b238f383cd06631",
   "lastOpenFiles": [
+    "coding_files/experiment/test_files/albums.csv",
+    "coding_files/experiment/jupyter_files/learning_pandas.ipynb",
     "coursework",
     "New folder",
     "notes/What is Data Science.md",
