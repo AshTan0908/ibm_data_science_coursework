@@ -3,13 +3,10 @@ import yfinance as yf
 data = yf.download('BZ=F', period = '1mo')
 print(data.head())
 print(data.shape)
-
 #candlestick_data = data.groupby(data['Price Ticker Date'].dt.date).agg({'Price':['min', 'max','first','low']})
 # yfinance already provides ohlc data, so no need to use groupby function
-
 import plotly
 import plotly.graph_objects as go
-
 fig1 = go.Figure(
     data = [
         go.Candlestick(
@@ -21,7 +18,6 @@ fig1 = go.Figure(
         )
     ]
 )
-
 fig1.update_layout(
     xaxis_rangeslider_visible=False,
     xaxis_title='Date',

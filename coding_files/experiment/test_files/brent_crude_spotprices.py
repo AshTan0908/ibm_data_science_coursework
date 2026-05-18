@@ -12,9 +12,10 @@ params = {
 
 r = requests.get(url, params=params)
 data = r.json()
-#print(data)
+print(data)
+
 
 df = pd.DataFrame(data['response']['data'])
-brent_data = df[df['series']=='RBRTE'][['Date', 'Price ($/bbl)']]
+brent_data = df[[df['series']=='RBRTE'], columns=['Date', 'Price ($/bbl)']]
 
 print(brent_data)

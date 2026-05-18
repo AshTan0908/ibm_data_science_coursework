@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Tandon - Official Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #444;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ashutosh Tandon (Gopal Ji)</h1>
+        <p>Former Minister and Dedicated Public Servant of Uttar Pradesh</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#biography">Biography</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="section" id="biography">
+            <h2>Biography</h2>
+            <p>Ashutosh Tandon, also known as Gopal Ji, was a prominent Indian politician born on May 12, 1960, in Lucknow, Uttar Pradesh. He was the son of senior BJP leader and former Governor of Madhya Pradesh, Lal Ji Tandon. Ashutosh Tandon served as a member of the Uttar Pradesh Legislative Assembly from the Lucknow East constituency and held key ministerial portfolios in the Government of Uttar Pradesh.</p>
+            <p>He graduated with a Bachelor of Arts degree from Lucknow University in 1980 and was married to Madhu Tandon, with whom he had a daughter. Tandon was known for his dedication to public service until his passing on November 9, 2023, at the age of 63.</p>
+        </div>
+        <div class="section" id="achievements">
+            <h2>Political Achievements</h2>
+            <ul>
+                <li><strong>2014:</strong> Won the Lucknow East assembly seat in a by-election, defeating Juhie Singh by 26,459 votes.</li>
+                <li><strong>2017:</strong> Re-elected from Lucknow East, defeating SP-Congress joint candidate Anurag Bhadoria by a record 79,230 votes. Appointed as Minister of Technical and Medical Education.</li>
+                <li><strong>2019:</strong> Allocated the Urban Development Department in a portfolio reshuffle, serving as Minister of Urban Development, Overall Urban Development, Urban Employment, and Poverty Alleviation.</li>
+                <li><strong>2022:</strong> Secured a third term from Lucknow East, defeating Samajwadi Party's Anurag Bhadouria by 49,017 votes.</li>
+                <li>Contributed Rs 1.5 crore from his MLA development fund for health infrastructure in two Lucknow hospitals.</li>
+            </ul>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact Information</h2>
+            <p>For inquiries or to pay respects, please contact:</p>
+            <p>Email: info@ashutoshtandon.org</p>
+            <p>Address: Lucknow, Uttar Pradesh, India</p>
+            <p>Note: This website serves as a tribute to Ashutosh Tandon's legacy. For official inquiries, please refer to the Uttar Pradesh Legislative Assembly website.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Ashutosh Tandon Memorial. All rights reserved.</p>
+    </footer>
+</body>
+</html>
