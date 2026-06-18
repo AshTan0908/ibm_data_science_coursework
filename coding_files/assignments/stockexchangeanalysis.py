@@ -64,7 +64,7 @@ for row in soup.find("tbody").find_all('tr'):
     # Finally we append the data of each row to the table
     netflix_data = pd.concat([netflix_data,pd.DataFrame({"Date":[date], "Open":[Open], "High":[high], "Low":[low], "Close":[close], "Adj Close":[adj_close], "Volume":[volume]})], ignore_index=True)   
 print(netflix_data.head())
-'''
+
 data = yf.download('AAPL', period='max')
 data.columns = data.columns.droplevel(1)
 
@@ -99,4 +99,38 @@ plotly.offline.plot(
     filename = './aaplstock.html',
     auto_open = False
 )
+fig.show()
+'''
+import yfinance as yf
+import plotly.graph_objects as go
+
+data = yf.download('AAPL', period='1y')
+
+# Fix multilevel columns if needed
+if hasattr(data.columns, 'droplevel'):
+    try:
+        data.columns = data.columns.droplevel(1)
+    except:
+        pass
+
+fig = go.Figure()
+
+fig.add_trace(
+    go.Scatter(
+        x=data.index,
+        y=data['Close'],
+        mode='lines',
+        name='Close Price',
+        line=dict(color='green'),
+        fill='tozeroy',
+        fillcolor='rgba(0, 128, 0, 0.2)'
+    )
+)
+
+fig.update_layout(
+    title='AAPL Stock Price',
+    xaxis_title='Date',
+    yaxis_title='Price'
+)
+
 fig.show()

@@ -1,6 +1,6 @@
 import yfinance as yf
 
-data = yf.download('BZ=F', period = '1mo')
+data = yf.download('BZ=F', period = 'max')
 print(data.head())
 print(data.shape)
 #candlestick_data = data.groupby(data['Price Ticker Date'].dt.date).agg({'Price':['min', 'max','first','low']})
